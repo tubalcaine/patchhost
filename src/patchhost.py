@@ -40,7 +40,7 @@ sourcedAction = '''\
 '''
 
 query = f'''\
-(id of it, name of it, (id of it, name of it) of site of it, content id of default action of it) \
+(id of it, name of it, (id of it | -1, name of it | "") of site of it, content id of default action of it) \
 	of relevant fixlets \
 	whose (exists name whose (it as lowercase contains "patch") of site of it and \
 	fixlet flag of it and \
